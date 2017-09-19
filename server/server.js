@@ -4,13 +4,11 @@ var bodyParser = require('body-parser')
 var server = express()
 var cors = require('cors')
 
-var userById = require('./routes/userById')
-var newUser = require('./routes/newUser')
+var route1 = require('./routes/route1')
 
 server.use(bodyParser.json())
 server.use(express.static(path.join(__dirname, '../public')))
 server.use(cors({origin: '*'}))
-server.use('/user/', userById)
-server.use('/register/', newUser )
+server.use('/route1/', route1)
 
 module.exports = server

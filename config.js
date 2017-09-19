@@ -1,6 +1,6 @@
 const configs = {
   production: {
-    host: 'signhere.herokuapp.com',
+    host: 'www.host.com',
     protocol: 'https'
   },
   development: {
